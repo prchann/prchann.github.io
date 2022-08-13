@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhippy=self.webpackChunkhippy||[]).push([[1743],{7574:(e,t,a)=>{a.r(t),a.d(t,{default:()=>p});var l=a(7294),n=a(2164);function p(){return l.createElement(n.Z,null,l.createElement("h1",null,"My React page"),l.createElement("p",null,"This is a React page"))}}}]);

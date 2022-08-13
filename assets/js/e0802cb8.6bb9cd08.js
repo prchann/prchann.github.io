@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkhippy=self.webpackChunkhippy||[]).push([[1844],{6262:p=>{p.exports=JSON.parse('{"label":"hola","permalink":"/hippy/blog/tags/hola","allTagsPath":"/hippy/blog/tags","count":1}')}}]);
