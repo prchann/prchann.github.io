@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Hippy',
   tagline: 'Dinosaurs are cool',
-  url: 'https://perrychann.github.io/',
-  baseUrl: '/hippy/',
+  url: 'https://hippy.cc/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
