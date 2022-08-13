@@ -15,11 +15,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          cache: yarn
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
       - name: Test build website
-        run: npm run build
+        run: yarn build
   deploy:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm
+          cache: yarn
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
@@ -38,5 +38,5 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "gh-actions"
-          npm ci
-          npm run deploy
+          yarn install --frozen-lockfile
+          yarn deploy
