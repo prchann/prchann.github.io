@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhippy=self.webpackChunkhippy||[]).push([[9831],{8084:p=>{p.exports=JSON.parse('{"permalink":"/hippy/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
