@@ -1,57 +1,55 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hippy',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://hippy.cc',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo.svg',
+  title: "陈沛锐",
+  tagline: "欢迎！",
+  url: "https://chenpeirui.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/logo.svg",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'perrychann', // Usually your GitHub org/user name.
-  projectName: 'hippy', // Usually your repo name.
+  organizationName: "chenpeirui", // Usually your GitHub org/user name.
+  projectName: "chenpeirui.github.io", // Usually your repo name.
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
-	gtag: {
-          trackingID: 'G-JYEV2TW7P7',
+        gtag: {
+          trackingID: "G-JYEV2TW7P7",
           anonymizeIP: true,
         },
       }),
@@ -62,74 +60,59 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Hippy',
+        title: "陈沛锐",
         logo: {
-          alt: 'Hippy',
-          src: 'img/logo.svg',
+          alt: "陈沛锐",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
+            type: "doc",
+            docId: "intro",
+            position: "left",
+            label: "指南",
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          { to: "/blog", label: "博客", position: "left" },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "文档",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "指南",
+                to: "/docs/intro",
+              },
+              {
+                label: "博客",
+                to: "/blog",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "关于",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "GitHub",
+                href: "https://github.com/chenpeirui",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "Twitter",
+                href: "https://twitter.com/chenpeirui",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} chenpeirui.com.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        respectPrefersColorScheme: true,
       },
     }),
 };
