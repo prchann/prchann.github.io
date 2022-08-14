@@ -69,12 +69,7 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "指南",
-          },
+          { to: "/docs/algorithm/placeholder", label: "指南", position: "left" },
           { to: "/blog", label: "博客", position: "left" },
         ],
       },
@@ -86,7 +81,7 @@ const config = {
             items: [
               {
                 label: "指南",
-                to: "/docs/intro",
+                to: "/docs/algorithm/placeholder",
               },
               {
                 label: "博客",
