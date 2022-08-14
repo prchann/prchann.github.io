@@ -18,6 +18,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "chenpeirui", // Usually your GitHub org/user name.
   projectName: "chenpeirui.github.io", // Usually your repo name.
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -37,13 +38,15 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
+          editUrl:
+            "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
+          editUrl:
+            "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
