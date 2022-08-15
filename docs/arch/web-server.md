@@ -1,14 +1,5 @@
 # Web Server
 
-## 架构
-
-1. [App](web-server-app.md#app)
-2. [Routers](web-server-app.md#routers)
-3. [Controllers](web-server-app.md#controllers)
-4. [Services](web-server-app.md#services)
-5. [Models](web-server-app.md#models)
-6. [Utils](web-server-app.md#utils)
-
 ## App
 
 * 启动应用；
