@@ -2,8 +2,8 @@
 
 ## MySQL
 
-* id binary\(16\) UUID\_TO\_BIN\(UUID\(\)\)
-  * WHERE id = UUID\_TO\_BIN\(?\)
+* id binary(16) UUID_TO_BIN(UUID())
+  * WHERE id = UUID_TO_BIN(?)
 * Escaping 将参数当作一个值进行转义
 * 减少请求 MySQL Server 的次数
 * 考虑数据量很大的情况
@@ -34,7 +34,7 @@ Use env `LANG` to support typing Chineses. It comes from base image [debian](htt
 
 ### Datetime
 
-建议使用 `datetime`\(而非 `timestamp`\)，并固定为 UTC 时间。[参考](https://stackoverflow.com/questions/409286/should-i-use-the-datetime-or-timestamp-data-type-in-mysql?noredirect=1&lq=1)。
+建议使用 `datetime`(而非 `timestamp`)，并固定为 UTC 时间。[参考](https://stackoverflow.com/questions/409286/should-i-use-the-datetime-or-timestamp-data-type-in-mysql?noredirect=1&lq=1)。
 
 * 不随时区变化，存储中是一个固定值（字符串）
 * 阅读友好
