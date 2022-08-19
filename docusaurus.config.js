@@ -82,8 +82,16 @@ const config = {
             title: "文档",
             items: [
               {
-                label: "指南",
-                to: "/docs/algorithm/placeholder",
+                label: "基础",
+                to: "/docs/basic"
+              },
+              {
+                label: "编码",
+                to: "/docs/code"
+              },
+              {
+                label: "规范",
+                to: "/docs/convention"
               },
               {
                 label: "博客",
