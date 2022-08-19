@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Redis
 
 任一命令均是原子性的。

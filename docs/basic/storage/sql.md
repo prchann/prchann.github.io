@@ -1,3 +1,7 @@
+---
+sidebar_position: 0
+---
+
 # SQL
 
 入门教程 [w3schools](https://www.w3schools.com/sql/default.asp)。

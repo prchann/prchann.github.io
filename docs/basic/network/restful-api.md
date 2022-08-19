@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # RESTful API
 
 ## Do an `action` in a `resource` .
