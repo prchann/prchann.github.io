@@ -69,7 +69,9 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          { to: "/docs/algorithm/placeholder", label: "指南", position: "left" },
+          { to: "/docs/basic", label: "基础", position: "left" },
+          { to: "/docs/code", label: "编码", position: "left" },
+          { to: "/docs/convention", label: "规范", position: "left" },
           { to: "/blog", label: "博客", position: "left" },
         ],
       },

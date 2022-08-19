@@ -1,5 +1,6 @@
 {
-  "label": "安全",
+  "label": "架构",
+  "position": 5,
   "link": {
     "type": "generated-index"
   }

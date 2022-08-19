@@ -1,5 +1,6 @@
 {
-  "label": "架构",
+  "label": "其他",
+  "position": 9999,
   "link": {
     "type": "generated-index"
   }

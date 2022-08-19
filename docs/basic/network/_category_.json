@@ -1,5 +1,6 @@
 {
-  "label": "存储",
+  "label": "网络",
+  "position": 2,
   "link": {
     "type": "generated-index"
   }
