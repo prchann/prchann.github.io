@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhippy=self.webpackChunkhippy||[]).push([[6086],{9973:e=>{e.exports=JSON.parse('{"title":"\u5176\u4ed6","slug":"/category/\u5176\u4ed6","permalink":"/docs/category/\u5176\u4ed6","navigation":{"previous":{"title":"\u7b97\u6cd5","permalink":"/docs/basic/algorithm/"},"next":{"title":"App","permalink":"/docs/basic/miscellaneous/"}}}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkhippy=self.webpackChunkhippy||[]).push([[315],{7520:e=>{e.exports=JSON.parse('{"title":"\u67b6\u6784","slug":"/category/\u67b6\u6784","permalink":"/docs/category/\u67b6\u6784","navigation":{"previous":{"title":"Docker","permalink":"/docs/basic/os/docker"},"next":{"title":"Web Server","permalink":"/docs/basic/arch/web-server"}}}')}}]);
