@@ -1,4 +1,4 @@
-# terminal
+# Terminal
 
 ## Terminal
 
