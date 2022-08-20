@@ -83,15 +83,15 @@ const config = {
             items: [
               {
                 label: "基础",
-                to: "/docs/basic"
+                to: "/docs/basic",
               },
               {
                 label: "编码",
-                to: "/docs/code"
+                to: "/docs/code",
               },
               {
                 label: "规范",
-                to: "/docs/convention"
+                to: "/docs/convention",
               },
               {
                 label: "博客",
@@ -122,6 +122,12 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+	docs: {
+		sidebar: {
+			hideable: true,
+			autoCollapseCategories: true,
+		}
+	}
     }),
 };
 
