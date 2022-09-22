@@ -113,7 +113,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} chenpeirui.com. <a href="//beian.miit.gov.cn" target="_blank" style="color: inherit; font-size: 14px;">粤ICP备20011280号</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} chenpeirui.com. <a href="https://beian.miit.gov.cn/" target="_blank" style="color: inherit; font-size: 14px;">粤ICP备2022033958号-1</a>`,
       },
       prism: {
         theme: lightCodeTheme,
