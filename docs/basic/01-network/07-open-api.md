@@ -1,8 +1,4 @@
----
-sidebar_position: 3
----
-
-# OpenAPI (Swagger)
+# Open API
 
 ## 文档
 

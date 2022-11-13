@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "陈沛锐",
-  tagline: "欢迎！",
-  url: "https://chenpeirui.com",
+  title: "PrChan's Website",
+  tagline: "Welcome!",
+  url: "https://prchan.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "chenpeirui", // Usually your GitHub org/user name.
-  projectName: "chenpeirui.github.io", // Usually your repo name.
+  organizationName: "prchann", // Usually your GitHub org/user name.
+  projectName: "prchann.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
@@ -39,14 +39,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
+            "https://github.com/prchann/prchann.github.io/tree/main/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/chenpeirui/chenpeirui.github.io/tree/main/",
+            "https://github.com/prchann/prchann.github.io/tree/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -63,9 +63,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "陈沛锐",
+        title: "PrChan",
         logo: {
-          alt: "陈沛锐",
+          alt: "prchan.com",
           src: "img/logo.svg",
         },
         items: [
@@ -104,16 +104,16 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/chenpeirui",
+                href: "https://github.com/prchann",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/chenpeirui",
+                href: "https://twitter.com/prchann",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} chenpeirui.com. <a href="https://beian.miit.gov.cn/" target="_blank" style="color: inherit; font-size: 14px;">粤ICP备2022033958号-1</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} prchan.com. <a href="https://beian.miit.gov.cn/" target="_blank" style="color: inherit; font-size: 14px;">粤ICP备2022033958号-1</a>`,
       },
       prism: {
         theme: lightCodeTheme,

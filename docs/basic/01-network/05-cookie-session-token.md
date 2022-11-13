@@ -1,8 +1,4 @@
----
-sidebar_position: 1
----
-
-# 对比：Cookie, Session, Token
+# Cookie, Session, Token
 
 ## Cookie
 
@@ -80,7 +76,7 @@ Set-Cookie: <name>=<value>; expires=<expired_at>; domain=<domain>; path=<path>; 
 * 各应用将借助 SSO 生成的 Token 存储在自身域名下；
 * 各应用服务端拿着从请求头中读取的 Token，去找 SSO 校验有效性。
 
-![&#x5355;&#x70B9;&#x767B;&#x5F55;](00ccaf52b8fa4898abbf0a5f19d749db.drawio.svg)
+![&#x5355;&#x70B9;&#x767B;&#x5F55;](aaccaf52b8fa4898abbf0a5f19d749db.drawio.svg)
 
 ## 参考
 
