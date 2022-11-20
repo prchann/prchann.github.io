@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "PrChan's Website",
   tagline: "Welcome!",
-  url: "https://prchan.com",
+  url: "https://www.prchan.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -58,6 +58,11 @@ const config = {
       }),
     ],
   ],
+
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -122,12 +127,12 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-	docs: {
-		sidebar: {
-			hideable: true,
-			autoCollapseCategories: true,
-		}
-	}
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        }
+      }
     }),
 };
 
