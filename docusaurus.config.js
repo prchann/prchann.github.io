@@ -118,7 +118,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} prchan.com. <a href="https://beian.miit.gov.cn/" target="_blank" style="color: inherit; font-size: 14px;">粤ICP备2022033958号-1</a>`,
+        copyright: `Copyright © PrChan.com`,
       },
       prism: {
         theme: lightCodeTheme,
