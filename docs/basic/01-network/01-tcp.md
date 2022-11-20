@@ -8,7 +8,7 @@ TCP 是一个**可靠**的传输层网络协议，它可确保数据传输的准
 
 将包分为了两部分。
 
-最大值
+最大容量：只受 MTU (2^16 byte) 限制。
 
 ### Header
 
@@ -193,14 +193,38 @@ end
 #### 快速恢复
 
 重发丢失的报，若
+
 1. 如果再收到重复的 ACK，则 cwnd += 1
 1. 如果收到新数据的 ACK, 则 cwnd = sshthresh。因为收到新数据的 ACK，表明恢复过程已经结束，可以再次进入拥塞避免
 
+## 优化方案
+
+### Nagle 算法 & 延时确认
+
+### 粘包 & 拆包
+
+原因：
+
+![](https://pic3.zhimg.com/80/v2-90ba54d0394d6a4d4ce1d09069d3b3be_1440w.jpg)
+
+**方案**:
+
+* 固定**逻辑**分段大小
+* 尾部加特殊分隔符
+* Body 中加逻辑 Header 标记大小
+
 ## 安全
 
-## 备注
+### SYN Flood 攻击
 
-### 参考
+原理：DoS: 占满半连接队列
+
+防御：
+
+* SYN Cookie
+* SYN Proxy 防火墙
+
+## 参考
 
 * [TCP 协议经典十五连问](https://zhuanlan.zhihu.com/p/391591603)
 * [TCP congestion avoidance flow](https://medium.com/tcp-ip/tcp-congestion-avoidance-flow-382bb02f4e20)
