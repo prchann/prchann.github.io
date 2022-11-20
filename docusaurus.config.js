@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "PrChan's Website",
   tagline: "Welcome!",
-  url: "https://www.prchan.com",
+  url: "https://prchan.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
