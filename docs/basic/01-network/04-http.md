@@ -112,24 +112,47 @@ C->>S: HTTP<br>Cookie: k0=v0#59; k1=v1
 Note left of C: 发送 Cookie
 ```
 
-### 生命周期
+### 属性
+
+```http
+Set-Cookie: <name>=<value>; expires=<expired_at>; domain=<domain>; path=<path>; secure; httpOnly; samesite
+```
+
+#### 生命周期
 
 * Session (默认): 关闭浏览器时失效；
 * Expires
 * max-age
 
-### Access
+#### Access
 
 * Secure (用于 HTTPS)
 * HttpOnly: 开关：Js 可否读写该 Cookie。
 
-### Scope
+#### Scope
 
 * Domain (默认 Host)
 * Path
 * SameSite (防范 CSRF)
 
 > **[最大值](https://stackoverflow.com/a/4604212)**： 总容量 2^12 bytes ~= 4KB。
+
+### Session & Token
+
+* 用 Cookie 存储和传输用户登录态，以识别用户；
+* JSON Web Token: User ID 存储在 token 中，并进行非对称加密。后台无需存储 map<Session, User ID>。
+
+### 单点登录
+
+有的企业可能有多于一个域名，但 Cookie 最大的可用范围只能是同一个域名。用户使用同一企业的不同域名应用时，为了无需多次登录，单点登录技术应运而生。
+
+关键逻辑：
+
+* 抽象出一个独立且企业级唯一的身份认证服务 \(SSO\)，负责身份认证、Token 生成、Token 校验等工作；
+* 各应用将借助 SSO 生成的 Token 存储在自身域名下；
+* 各应用服务端拿着从请求头中读取的 Token，去找 SSO 校验有效性。
+
+![单点登录](aaccaf52b8fa4898abbf0a5f19d749db.drawio.svg)
 
 ## Range Request 断点续传
 
@@ -249,5 +272,7 @@ Note over C, S: 双方开始加密通讯
 
 * [HTTP Guide - mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP)
 * [彻底弄懂浏览器缓存策略](https://mp.weixin.qq.com/s/Ui7Q9k4faiD5mv_LfB4Rrw)
+* [Cookies](https://javascript.info/cookie)
+* [前端鉴权必须了解的5个兄弟：cookie、session、token、jwt、单点登录](https://mp.weixin.qq.com/s/hKL3haddZkIEHpNuUgWh3A)
 * [从HTTP到HTTP/3的发展简史](https://mp.weixin.qq.com/s/E5RwKvHcDdzHS77lpb9wvw)
 * [How HTTPS Works](https://howhttps.works)
