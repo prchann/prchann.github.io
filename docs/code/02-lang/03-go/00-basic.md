@@ -405,3 +405,14 @@ defer 栈: FILO
 ## 错误处理
 
 errer 是普通的类型，判断 `err != nil`
+
+## 参考
+
+* [Go by Example](https://gobyexample.com)
+* [Go go-to guide](https://yourbasic.org/golang/)
+* [Learn Web Programming in Go by Examples](https://gowebexamples.com)
+* [Go语言圣经](https://books.studygolang.com/gopl-zh/)
+* [Go语言高级编程(Advanced Go Programming)](https://chai2010.gitbooks.io/advanced-go-programming-book/content/)
+* [Golang 高级编程](https://learnku.com/docs/bettercoding/1.0/the-difference-between-reflection-operation-common-variable-type-and-kind/7052)
+* [go interface](https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
+* [算法的 Go 实现](https://github.com/TheAlgorithms/Go)

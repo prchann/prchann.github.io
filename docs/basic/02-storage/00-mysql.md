@@ -1,12 +1,43 @@
----
-sidebar_position: 0
----
+# MySQL
 
-# SQL
+![SQL 执行过程](https://raw.githubusercontent.com/prchann/fs/main/7fa21ffd21b346eab6be2d64f4186323.jpeg)
 
-入门教程 [w3schools](https://www.w3schools.com/sql/default.asp)。
+*SQL 执行过程*
 
-## Query
+## 索引
+
+## 存储
+
+## MyISAM
+
+### InnoDB VS MyISAM
+
+## 查询性能优化
+
+## 架构
+
+## 高级特性
+
+## 缓存管理
+
+## 执行计划
+
+## log
+
+## 数据类型
+
+### 日期时间
+
+建议使用 `datetime`(而非 `timestamp`)，并固定为 UTC 时间。[参考](https://stackoverflow.com/questions/409286/should-i-use-the-datetime-or-timestamp-data-type-in-mysql?noredirect=1&lq=1)。
+
+* 不随时区变化，存储中是一个固定值（字符串）
+* 阅读友好
+* 容易转换为 Unix 时间戳 `SELECT UNIX_TIMESTAMP(my_datetime)`
+* C 端按需转换为 Locale 时间
+
+## SQL
+
+### Query
 
 ```sql
 SELECT c1, c2 FROM t;
@@ -22,7 +53,7 @@ WHERE a.c1 = b.c2;
 SELECT DISTINCT c FROM t;
 ```
 
-### Condition
+#### Condition
 
 ```sql
 -- =, >, <, <=, >=, <>
@@ -73,14 +104,14 @@ SELECT `name` FROM products
 WHERE `id` = ANY (SELECT productId FROM orders WHERE quantity = 10);
 ```
 
-### Order
+#### Order
 
 ```sql
 SELECT c1 FROM t
 ORDER BY c1 ASC, c2 DESC;
 ```
 
-### Limit
+#### Limit
 
 ```sql
 -- row_count
@@ -92,7 +123,7 @@ SELECT c1 FROM t
 LIMIT 0, 15;
 ```
 
-### Group
+#### Group
 
 ```sql
 -- often used with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns
@@ -107,7 +138,7 @@ GROUP BY country
 HAVING customerCount > 5
 ```
 
-### Join
+#### Join
 
 ![inner-join](https://www.w3schools.com/sql/img_innerjoin.gif) ![left-join](https://www.w3schools.com/sql/img_leftjoin.gif) ![right-join](https://www.w3schools.com/sql/img_rightjoin.gif) ![full-outer-join](https://www.w3schools.com/sql/img_fulljoin.gif)
 
@@ -165,7 +196,7 @@ UNION ALL
 SELECT c1, c2 FROM b
 ```
 
-## Insert, Update and Delete
+### Insert, Update and Delete
 
 ```sql
 -- INSERT INTO
@@ -190,7 +221,7 @@ DELETE FROM t
 WHERE c1 = 1;
 ```
 
-## Functions
+### Functions
 
 Reference to [String Functions and Operators](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html).
 
@@ -212,7 +243,7 @@ SET c1 = REPLACE(c1, 'from_str', 'to_str')
 WHERE b = 1;
 ```
 
-## Stored Procedures
+### Stored Procedures
 
 ```sql
 -- create a procedure
@@ -232,7 +263,7 @@ GO;
 EXEC SelectAllCustomers @city = "London";
 ```
 
-## Advanced
+### Advanced
 
 ```sql
 -- SELECT INTO
@@ -286,7 +317,7 @@ SELECT `name`, unitPrice * (unitsInStock + IFNULL(unitsOnOrder, 0))
 FROM products;
 ```
 
-## Admin
+### Admin
 
 ```sql
 -- DATABASE
@@ -320,7 +351,7 @@ ALTER TABLE t DROP INDEX column_name;
 ALTER TABLE t DROP PRIMARY KEY;
 ```
 
-## Help
+### Help
 
 ```sql
 ?
@@ -328,8 +359,8 @@ ALTER TABLE t DROP PRIMARY KEY;
 help
 ```
 
-## Best Practice
+## 参考
 
-* Uppercase KEYWORD for easy read;
-* Avoid using `*` for performence;
-* Use line break reasonably.
+* [SQL Tutorial - W3Schools](https://www.w3schools.com/sql/default.asp)
+* [MySQL naming / coding conventions: tips on mySQL database](https://anandarajpandey.com/2015/05/10/mysql-naming-coding-conventions-tips-on-mysql-database/)
+* [Mysql 8.0: UUID support](https://mysqlserverteam.com/mysql-8-0-uuid-support/)

@@ -1,7 +1,3 @@
----
-sidebar_position: 0
----
-
 # Docker
 
 ## Send Signal
@@ -15,3 +11,7 @@ You may send a signal to container as you want.
 # nginx reload config file
 docker kill -s HUP nginx
 ```
+
+## 参考
+
+* [Learning Containers From The Bottom Up](https://iximiuz.com/en/posts/container-learning-path/)
