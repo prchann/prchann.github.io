@@ -1,4 +1,4 @@
-# Shell Basic
+# Shell 基础
 
 ## 语法
 
