@@ -4,7 +4,7 @@
 
 ### 变量
 
-```sh
+```shell
 # 读取环境变量
 # 环境变量会自动作为变量
 # HOST=127.0.0.1 ./test.sh
@@ -16,7 +16,7 @@ export HOST=127.0.0.1
 
 ### 条件
 
-```sh
+```shell
 # 判断变量 var 是否为空字符串
 if [ -z "$var" ]; then
     echo true
