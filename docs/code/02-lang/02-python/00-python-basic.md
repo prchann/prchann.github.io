@@ -153,11 +153,3 @@ def doSomething(param1, param2):
 
 foo, bar = doSomething(1, 2)
 ```
-
-## venv
-
-```bash
-python3 -m venv venv
-source ./venv/bin/activate
-```
-
