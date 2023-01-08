@@ -4,7 +4,7 @@
 
 不同工程可能对 Py 版本要求不同，此时需安装多个 Py 版本，根据工程所需动态切换。
 
-Py 生态中存在多个多版本解决方案，笔者使用 `pyenv`(https://github.com/pyenv/pyenv)。
+Py 生态中存在多个多版本解决方案，笔者使用 [pyenv](https://github.com/pyenv/pyenv)。
 
 > pyenv 安装和 .zshrc 配置，请参考官方文档。
 
