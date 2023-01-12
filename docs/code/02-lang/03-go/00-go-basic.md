@@ -408,11 +408,11 @@ errer 是普通的类型，判断 `err != nil`
 
 ## 参考
 
-* [Go by Example](https://gobyexample.com)
-* [Go go-to guide](https://yourbasic.org/golang/)
-* [Learn Web Programming in Go by Examples](https://gowebexamples.com)
-* [Go语言圣经](https://books.studygolang.com/gopl-zh/)
-* [Go语言高级编程(Advanced Go Programming)](https://chai2010.gitbooks.io/advanced-go-programming-book/content/)
-* [Golang 高级编程](https://learnku.com/docs/bettercoding/1.0/the-difference-between-reflection-operation-common-variable-type-and-kind/7052)
-* [go interface](https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
-* [算法的 Go 实现](https://github.com/TheAlgorithms/Go)
+1. [Go by Example](https://gobyexample.com)
+1. [Go go-to guide](https://yourbasic.org/golang/)
+1. [Learn Web Programming in Go by Examples](https://gowebexamples.com)
+1. [Go语言圣经](https://books.studygolang.com/gopl-zh/)
+1. [Go语言高级编程(Advanced Go Programming)](https://chai2010.gitbooks.io/advanced-go-programming-book/content/)
+1. [Golang 高级编程](https://learnku.com/docs/bettercoding/1.0/the-difference-between-reflection-operation-common-variable-type-and-kind/7052)
+1. [go interface](https://jordanorelli.com/post/32665860244/how-to-use-interfaces-in-go)
+1. [算法的 Go 实现](https://github.com/TheAlgorithms/Go)

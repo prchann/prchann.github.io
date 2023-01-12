@@ -24,3 +24,5 @@ git rev-parse --short HEAD # > 9ec13fe
 ## 参考
 
 1. [GitHub Git Cheat Sheet](https://github.github.com/training-kit/downloads/github-git-cheat-sheet/)
+1. [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials)
+1. [Pro Git](https://git-scm.com/book/en/v2)
