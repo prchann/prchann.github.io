@@ -153,3 +153,11 @@ def doSomething(param1, param2):
 
 foo, bar = doSomething(1, 2)
 ```
+
+## 参考
+
+1. [Python Developer Roadmap](https://roadmap.sh/python/)
+1. [Automate the Boring Stuff with Python](https://automatetheboringstuff.com)
+1. [The Big Book of Small Python Projects](https://inventwithpython.com/bigbookpython/)
+1. [Python Examples – Learn Python Programming](https://pythonexamples.org)
+1. [Learn Python By Example](https://www.learnbyexample.org/python/)
